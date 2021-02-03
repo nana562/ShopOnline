@@ -1,0 +1,75 @@
+API ENDPOINTS
+A List of APIs to be created and what has been done so far
+Endpoint for getting all products from DB
+GET localhost:5000/api/all_products
+
+Endpoint for getting all products from DB
+GET localhost:5000/api/all_products
+
+//Endpoint for getting a single product
+Get localhost:5000/api/product/:id
+
+//Endpoint for uploading a product to DB
+Post localhost:5000/upload
+
+NB: Product image upload fieldname is named "file"
+
+//Endpoint for deleting a product from DB
+Delete localhost:5000/api/admin_dashboard/deleteproduct/:id
+
+//Endpoint for updating a product by only Admin
+Put localhost:5000/api/admin_dashboard/updateproduct/:id
+
+//Endpoint for rendering login Page
+Get localhost:5000/login
+
+//Endpoint for rendering signup page 
+Get localhost:5000/register
+
+//Endpoint for user login -Login Handler
+Post localhost:5000/login
+
+//Endpoint for user logout -Logout Handler
+Get localhost:5000/logout
+
+Get localhost:5000
+Should render a homepage but currently displays user login
+
+
+AUTHENTICATION API ENDPOINTS
+//Endpoint for new user sign up - Sigup Handler
+Post localhost:5000/register"
+
+Register new user as regular user (i.e. this user will not be an admin or staff). After new user registration, page will be redirected to login page
+
+{
+    "name": <name>,
+    "email": <email>,
+    "password": <password>,
+    "password2": <password2>
+}
+Redirection to login page
+
+{
+Get localhost:5000/login
+
+Login a user or get user authentication
+
+{
+    email: <email>,
+    password: <user password>
+}
+Login successful, redirected to user dashboard
+Unsuccessful redirects to registration page
+{
+Get localhost:5000/dashboard', 
+}
+
+Logout user
+
+Get localhost:5000/logout/
+
+YET TO BE IMPLEMENTED 
+user email confirmation
+Password reset feature
+User login with facebook and twitter 
